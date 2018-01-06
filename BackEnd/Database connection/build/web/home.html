@@ -1,0 +1,90 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>LoremBox</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="manifest" href="site.webmanifest">
+        <link rel="apple-touch-icon" href="icon.png">
+        <!-- Place favicon.ico in the root directory -->
+
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/font-awesome.css">
+        <link rel="stylesheet" href="css/animate.css">
+
+
+    </head>
+    <body>
+    <div class="container">
+
+        <!-- Sidebar -->
+        <aside class="animated sidebar hidden">
+
+            <a href="#">
+              <div class="button" id="home">Home</div>
+            </a>
+
+            <a href="#">
+              <div class="button" id="favorites">Favorites</div>
+            </a>
+
+            <a href="#">
+              <div class="button upload-button">Upload</div>
+            </a>
+
+            <a href="#" class="sign-out">
+                <form action="Logout" method="post">
+                    <button type="submit" class="white button button-block"/>logout</button>
+                </form>
+            </a>
+        </aside>
+
+        <!-- Page Content -->
+        <main class="allcontent">
+
+          <i class="fa fa-2x fa-bars hamburger" aria-hidden="true"></i>
+
+          <header>
+              <img src="img/logo.png" alt="logo" class="logo">
+              <h1 class="username">käyttäjä</h1>
+          </header>
+
+            <div class="contenttitle"></div>
+
+            <section class="content files"></section>
+
+        </main>
+    </div>
+
+
+        <!-- lightbox for upload -->
+        <div class="hidden lightbox">
+
+            <form class="upload-form" action="do" method="post" enctype="multipart/form-data">
+
+            <i class="upload-x fa fa-2x fa-times" aria-hidden="true"></i><br><br>
+
+            <!-- input hidden -->
+            <input onchange="changeUploadText()" id="file" type="file" name="fileup" value="Give file" class="inputfile hidden" required />
+
+            <label class="sama upload-label" for="file"><i class="fa fa-2x fa-cloud-upload" aria-hidden="true"></i>
+              <span class="upload-span">Select a file</span></label>
+            <button class="sama button button-block" type="submit">Upload</button>
+          </form>
+
+        </div>
+        
+        <!-- form for delete -->
+        <div class="hidden">
+            <form class="deleteForm" action="DeleteFile" method="post">
+                <input type="text" class="deleteInput" name="delete">
+            </form>
+        </div>
+
+        <script src="main.js"></script>
+    </body>
+</html>

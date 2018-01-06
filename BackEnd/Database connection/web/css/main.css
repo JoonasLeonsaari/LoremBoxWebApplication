@@ -1,0 +1,667 @@
+/*! HTML5 Boilerplate v6.0.1 | MIT License | https://html5boilerplate.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+    background-color: #000;
+    font-size: 1em;
+    line-height: 1.4;
+    overflow-x: hidden;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * Vendor-prefixed and regular ::selection selectors cannot be combined:
+ * https://stackoverflow.com/a/16982510/7133471
+ *
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #1ab188;
+    text-shadow: none;
+}
+
+::selection {
+    background: #1ab188;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+*, *:before, *:after {
+     box-sizing: border-box;
+}
+
+header {
+    background-position: center;
+    width: 100%;
+}
+
+.logo {
+  width: 56%;
+  height: 56%;
+  display: block;
+  margin: 0 auto;
+}
+
+header h1 {
+    font-size: 1.5em;
+    padding: 15px;
+    color: #e9e9e9;
+}
+
+body {
+     font-family: 'Titillium Web', sans-serif;
+}
+
+a {
+     text-decoration: none;
+     color: #FFF;
+     -webkit-transition: .5s ease;
+     transition: .5s ease;
+}
+
+
+div#signup{
+    padding-bottom: 10%;
+}
+
+h1 {
+    text-align: center;
+    color: #ffffff;
+    font-weight: 300;
+    margin: 0 0 40px;
+}
+
+h4 {
+    color: #1ab188;
+}
+
+ul {
+    display: block;
+    padding: 20px;
+}
+
+.form-input > div {
+    display: block;
+    width: 80%;
+}
+
+li {
+    display: list-item;
+    text-align: match-parent;
+}
+
+input, textarea {
+    font-size: 22px;
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: 5px 10px;
+    background: none;
+    border: 1px solid #928DAB;
+    color: white;
+    border-radius: 0;
+    -webkit-transition: border-color .25s ease, box-shadow .25s ease;
+    transition: border-color .25s ease, box-shadow .25s ease;
+}
+input:focus, textarea:focus {
+    outline: 0;
+    border-color: #1ab188;
+}
+
+.form-input:hover {
+    box-shadow: 0 0 0 2px #1ab188;
+}
+
+textarea {
+    border: 2px solid #a0b3b0;
+    resize: vertical;
+}
+
+.form {
+    background:  rgba(0, 0, 0, 0.35);;
+    color: #928DAB;
+    padding: 40px;
+    max-width: 600px;
+    margin: 40px auto;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px 2px black;
+}
+
+.form-input {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0px;
+    border: none;
+    padding: 15px 0;
+    font-size: 2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    background: #3F434A;
+    width: 100%;
+}
+
+/* same as button but smaller */
+.smallButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0px;
+  border: none;
+  padding: 15px 0;
+  /*font-size: 32px;*/
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+  background: #3F434A;
+  width: 100%;
+}
+
+aside > .button {
+    font-size: 1.75rem;
+}
+
+.button:hover, .smallButton:hover {
+    background-color: #1ab188;
+}
+
+.container {
+    display: table;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    width:100%;
+    background-color: #34373c;
+}
+
+.allcontent {
+    display: block;
+    width:100%;
+    box-sizing: border-box;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.contenttitle {
+    color: #1ab188;
+}
+
+.content {
+    color: #7D7894;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.file {
+  width: 270px;
+  height: 265px;
+  margin: 15px auto;
+  color: white;
+  background-color: #34373c;
+  position: relative;
+  text-align: center;
+  word-wrap: break-word;
+  position: relative;
+}
+
+.filedesc {
+  margin-top: 5px;
+  margin-left: 40px;
+  background-color: #00000069;
+  position: absolute;
+}
+
+.file img {
+  max-width: 100%;
+  max-height: 100%;
+
+}
+
+.alert {
+  background-color: #1ab188;
+}
+
+.fa-bars {
+  color: white;
+  cursor: pointer;
+}
+
+.fa-info-circle, .fa-times-circle {
+  color: white;
+  cursor: pointer;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: #00000069;
+}
+
+.dropdown {
+  position: absolute;
+  z-index: 2;
+  background-color: #34373c;
+  border: 1px solid white;
+  margin: 15px;
+  font-family: 'Titillium Web', sans-serif;
+}
+
+/* lightbox is container for upload-form so it looks cool */
+.lightbox {
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  position: absolute;
+  margin: 0 auto;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+
+.upload-form {
+  width: 60%;
+  color: black;
+  background-color: #fff;
+  position: absolute;
+  left: 50%;
+  margin: 0 0 0 -30%;
+  top: 1rem;
+  padding: 1rem;
+}
+
+.hamburger {
+  display: none;
+}
+
+.inputfile {
+	width: 0.1px;
+	height: 0.1px;
+	opacity: 0;
+	overflow: hidden;
+	position: absolute;
+	z-index: -1;
+}
+
+.inputfile + label {
+  font-size: 32px;
+  font-weight: 600;
+  color: white;
+  background-color: #3F434A;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.inputfile:focus + label,
+.inputfile + label:hover {
+  background-color: #1ab188;
+}
+
+.upload-label {
+  text-transform: uppercase;
+  width: 100%;
+  text-align: center;
+}
+
+.upload-x {
+  color: black;
+  cursor: pointer;
+}
+
+.white {
+  color: white;
+  cursor: pointer;
+}
+
+.sama {
+  font-family: 'Titillium Web', sans-serif;
+  color: white;
+}
+
+.upload-span {
+  vertical-align: super;
+}
+
+/* ==========================================================================
+   File Styling
+   ========================================================================== */
+
+
+/* ==========================================================================
+   Remember me styling
+   ========================================================================== */
+div.rememberdiv {
+    display: flex;
+    align-items: center;
+}
+
+.rememberme {
+    width: 0;
+    height: 0;
+    background: #ddd;
+    bottom: 10px;
+
+    border-radius: 100%;
+    position: relative;
+    box-shadow: 0px 1px 3px rgba(160,179,176,0.5);
+}
+
+.rememberme label {
+    display: block;
+    width: 30px;
+    height: 30px;
+    border-radius: 100px;
+    transition: all .5s ease;
+    cursor: pointer;
+    position: absolute;
+    z-index: 1;
+    background: #333;
+    box-shadow:inset 1px 2px 6px rgba(160,179,176,0.5);
+}
+
+.rememberme input[type=checkbox]:checked + label {
+    background: #1ab188;
+}
+/* ==========================================================================
+   Placeholder styling
+   ========================================================================== */
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color:    #a0b3b0;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color:    #a0b3b0;
+    opacity:  1;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color:    #a0b3b0;
+    opacity:  1;
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 & Microsoft Edge */
+    color:    #a0b3b0;
+}
+
+::placeholder { /* Most modern browsers support this now. */
+    color:    #a0b3b0;
+}
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden {
+    display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ *
+ * 1. For long content, line feeds are not interpreted as spaces and small width
+ *    causes content to wrap 1 word per line:
+ *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    -webkit-clip-path: inset(50%);
+    clip-path: inset(50%);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+    white-space: nowrap; /* 1 */
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    -webkit-clip-path: none;
+    clip-path: none;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+    white-space: inherit;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+    .sidebar {
+      display: table-cell;
+      width: 250px;
+      height: 100%;
+      vertical-align: top;
+    }
+
+    .allcontent {
+      display: table-cell;
+      width: auto;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+    }
+
+    .hamburger {
+      display: block;
+    }
+}
+
+@media print,
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 1.25dppx),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   http://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster:
+                                   http://www.sanbeiji.com/archives/953 */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre {
+        white-space: pre-wrap !important;
+    }
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    /*
+     * Printing Tables:
+     * http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
